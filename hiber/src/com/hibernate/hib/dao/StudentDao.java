@@ -8,11 +8,14 @@ import org.hibernate.cfg.Configuration;
 
 import com.hibernate.hib.dto.StudentDto;
 
-public class StudentDao {
+public class StudentDao
+{
 
-	public void save(StudentDto dto){
+	public void save(StudentDto dto)
+	{
 		Transaction tx = null;
-		try {
+		try 
+		{
 			Configuration cfg = new Configuration();
 			cfg.configure();
 			SessionFactory factory= cfg.buildSessionFactory();
